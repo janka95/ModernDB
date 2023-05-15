@@ -1,0 +1,6 @@
+CREATE TABLE Books(
+isbn VARCHAR2(14) NOT NULL,
+title VARCHAR2(50),
+price NUMBER(10),
+PRIMARY KEY(isbn)
+)
