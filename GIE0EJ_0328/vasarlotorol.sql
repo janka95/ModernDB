@@ -1,0 +1,1 @@
+DELETE FROM Vasarlo2 WHERE VID IN ('v13', 'v14');

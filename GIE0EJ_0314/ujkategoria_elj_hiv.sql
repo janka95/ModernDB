@@ -1,0 +1,1 @@
+EXECUTE UjKategoria('K05', 'Szabó Péter', 110000, 'Fejlesztõ');

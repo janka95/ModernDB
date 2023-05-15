@@ -1,0 +1,1 @@
+SELECT KategoriaDarab() FROM DUAL;

@@ -1,0 +1,5 @@
+CREATE TABLE Naplo5 (
+  Esemeny VARCHAR(20),
+  Adat VARCHAR(100),
+  Datum TIMESTAMP
+);

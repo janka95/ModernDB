@@ -1,0 +1,1 @@
+EXECUTE KategoriaTorol('K05');

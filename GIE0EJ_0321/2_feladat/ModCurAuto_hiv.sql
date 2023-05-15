@@ -1,0 +1,1 @@
+EXECUTE aut_arnov1('piros', 10);

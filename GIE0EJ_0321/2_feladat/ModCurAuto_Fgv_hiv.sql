@@ -1,0 +1,1 @@
+EXECUTE aut_arnov3('szürke', 10);

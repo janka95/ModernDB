@@ -1,0 +1,7 @@
+CREATE OR REPLACE FUNCTION KategoriaDarab RETURN NUMBER
+IS
+  darab NUMBER;
+BEGIN
+  SELECT COUNT(*) INTO darab FROM Kategoria;
+  RETURN darab;
+END;
