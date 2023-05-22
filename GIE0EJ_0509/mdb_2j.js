@@ -1,0 +1,1 @@
+db.auto.find({},{"tipus":1,"ar":1}).sort({"ar":-1})

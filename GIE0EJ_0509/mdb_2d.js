@@ -1,0 +1,1 @@
+db.auto.find({"ar":{"$gt":1000000}}).count()

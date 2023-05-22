@@ -1,0 +1,1 @@
+db.auto.find({"tipus":{"$in":["Toyota","Audi"]}})

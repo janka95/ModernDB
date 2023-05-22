@@ -1,0 +1,1 @@
+db.auto.find({"$or":[{"tipus":"Suzuki"},{"gyev":{"$gt":2007}}]})
