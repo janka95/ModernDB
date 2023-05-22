@@ -1,0 +1,2 @@
+db.loadServerScripts();
+getTulajByName("Janka");

@@ -1,0 +1,2 @@
+db.loadServerScripts();
+getAutoByTulajName("Janka");
