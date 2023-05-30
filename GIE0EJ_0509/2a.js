@@ -1,1 +1,1 @@
-db.createCollection("auto")
+use MDB_GIE0EJ

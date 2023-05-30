@@ -13,14 +13,14 @@ public class BookDAO {
 	
 	public void update(Book book) {
 		SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();
-		session.update("mybatis.BookMapper.updateBook", book);
+		session.update("resources.mybatis.BookMapper.updateBook", book);
 		session.commit();
 		session.close();
 	}
 	
 	public List<Book> findAll() {
 		SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();
-		List<Book> books = session.selectList("mybatis.BookMapper.findAllBooks");
+		List<Book> books = session.selectList("resources.mybatis.BookMapper.findAllBooks");
 		session.commit();
 		session.close();
 		return books;
@@ -28,7 +28,7 @@ public class BookDAO {
 	
 	public List<Book> select() {
 		SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();
-		List<Book> books = session.selectList("mybatis.BookMapper.selectBook");
+		List<Book> books = session.selectList("resources.mybatis.BookMapper.selectBook");
 		session.commit();
 		session.close();
 		return books;
@@ -36,7 +36,7 @@ public class BookDAO {
 	
 	public void delete(String id) {
 		SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();
-		session.delete("mybatis.BookMapper.deleteBook", id);
+		session.delete("resources.mybatis.BookMapper.deleteBook", id);
 		session.commit();
 		session.close();
 	}

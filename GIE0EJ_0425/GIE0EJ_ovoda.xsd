@@ -10,7 +10,7 @@
                    				 <xs:sequence>
                        				<xs:element name="nev" type="xs:string"/>
                        				<xs:element name="beosztas" type="xs:string"/>
-                        			<xs:element name="szulido" type="xs:date"/>
+                        			<xs:element name="szulido" type="xs:integer"/>
                    				 </xs:sequence>
                     			<xs:attribute type="xs:integer" name="id" use="required"/>
                 			</xs:complexType>
@@ -19,7 +19,7 @@
                 			<xs:complexType>
                    				 <xs:sequence>
                        				<xs:element name="nev" type="xs:string"/>
-                        			<xs:element name="szulido" type="xs:date"/>
+                        			<xs:element name="szulido" type="xs:integer"/>
                    				 </xs:sequence>
                     			<xs:attribute type="xs:string" name="jel" use="required"/>
                 			</xs:complexType>

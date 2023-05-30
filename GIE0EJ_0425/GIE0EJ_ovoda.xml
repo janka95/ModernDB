@@ -1,4 +1,5 @@
-<ovoda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="GIE0EJ_ovoda.xsd">
+<ovoda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="GIE0EJ_ovoda.xsd">
 	<csoport nev="süni">
 		<dolgozo id="1">
 			<nev>Kiss Júlia</nev>
@@ -19,13 +20,9 @@
 			<szulido>2019</szulido>
 		</gyerek>	
 		<gyerek jel="virág">
-			<nev>Kovács Mari</nev>
+			<nev>Kovács Márta</nev>
 			<szulido>2019</szulido>
 		</gyerek>						
-	<gyerek jel="fagyi">
-            <nev>Kocsis Laci</nev>
-            <szulido>2018</szulido>
-        </gyerek>
     </csoport>
 		<csoport nev="maci">
 		<dolgozo id="3">
