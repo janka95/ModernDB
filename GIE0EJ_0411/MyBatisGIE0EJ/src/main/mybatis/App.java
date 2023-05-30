@@ -11,14 +11,14 @@ public class App {
 		bookIn.setIsbn("006");
 		bookIn.setTitle("Aranyember");
 		bookIn.setPrice(2500);
-		bookDAO.insert(bookIn);
+		//bookDAO.insert(bookIn);
 		System.out.println("Mentve: isbn: " + bookIn.getIsbn() + ", title: " + bookIn.getTitle() + ", price: " + bookIn.getPrice() + "\n");
 		
 		//2. feladat
 		Book bookUp = new Book();
 		bookUp.setIsbn("002");
 		bookUp.setPrice(8200);
-		bookDAO.update(bookUp);
+		//bookDAO.update(bookUp);
 		System.out.println("Módosítva: isbn: " + bookUp.getIsbn() + ", title: " + bookUp.getTitle() + ", price: " + bookUp.getPrice() + "\n");
 		
 		//3. feladat

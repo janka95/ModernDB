@@ -6,7 +6,7 @@ public class BookDAO {
 	
 	public void insert(Book book) {
 		SqlSession session = MyBatisUtil.getSqlSessionFactory().openSession();
-		session.insert("mybatis.BookMapper.insertBook", book);
+		session.insert("resources.mybatis.BookMapper.insertBook", book);
 		session.commit();
 		session.close();
 	}
