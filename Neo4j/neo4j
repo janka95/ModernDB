@@ -1,0 +1,25 @@
+create (:book {id:"b1", title:"Sun and stars", topic:"science", pyear:2003, price:400})
+create (:book {id:"b2", title:"New City", topic:"thriller", pyear:2005, price:300})
+create (:book {id:"b3", title:"Spring in Winter", topic:"thriller", pyear:2002, price:250})
+create (:book {id:"b4", title:"Gravity", topic:"science", pyear:2007, price:450})
+create(:author{name:"Max", country:"GB", age:45})
+create(:author{name:"Tom", country:"US"})
+create(:author{name:"Mary", country:"GB", age:31})
+
+match(b:book {id:"b1"}), (a:author {name:"Tom"}) create (b)-[:written_by]->(a)
+match(b:book {id:"b2"}), (a:author {name:"Max"}) create (b)-[:written_by]->(a)
+match(b:book {id:"b3"}), (a:author {name:"Tom"}) create (b)-[:written_by]->(a)
+match(b:book {id:"b4"}), (a:author {name:"Mary"}) create (b)-[:written_by]->(a)
+
+match(b:book{topic:"science"}) return b.title
+match (b:book) where b.price > 400 return b.title, b.price
+match (b:book {topic:"science"})-[]->(a:author) return a.name
+match ()-[l:written_by]->() set l.work_effort = 0
+match (a:book {id:"b1"})-[l:written_by]->() set l.work_effort = 20
+match (b:book)-[l:written_by]->(a:author {name:"Max"}) set l.work_effort = l.work_effort + 50
+match (b:book)-[l:written_by]->(a:author {name:"Tom"}) detach delete b
+match (b:book {id:"b1"})-[c]->(a:author {name:"Tom"}) delete c
+match (b:book) remove b.pyear
+
+match (a:book) return a
+match (a:author) return a
